@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Muhammad Haroon · Computer Science · Portfolio Series</title>
+  <meta name="description" content="Muhammad Haroon, Computer Science student building Python, C++ and web projects. Open to internships and collaboration.">
+  <meta property="og:title" content="Muhammad Haroon · Portfolio Series">
+  <meta property="og:description" content="Python, C++ and web projects by Muhammad Haroon, Computer Science student.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0a0708">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23e0262f'/%3E%3Ctext x='50' y='68' font-size='56' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'%3EH%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Figtree:wght@400;600;700;800&family=JetBrains+Mono:wght@500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+  <div class="bg-drift" aria-hidden="true"></div>
+
+  <!-- ============ PAGE 1: INTRO ============ -->
+  <div class="intro" id="intro">
+    <div class="glow" aria-hidden="true"></div>
+
+    <h1 class="name" aria-label="Muhammad Haroon">
+      <span class="w w1" aria-hidden="true"><i style="--i:0">M</i><i style="--i:1">U</i><i style="--i:2">H</i><i style="--i:3">A</i><i style="--i:4">M</i><i style="--i:5">M</i><i style="--i:6">A</i><i style="--i:7">D</i></span>
+      <span class="w w2" aria-hidden="true"><i style="--i:0">H</i><i style="--i:1">A</i><i style="--i:2">R</i><i style="--i:3">O</i><i style="--i:4">O</i><i style="--i:5">N</i></span>
+    </h1>
+
+    <div class="intro-body">
+      <p class="series">THE SERIES</p>
+      <div class="intro-figure">
+        <span class="figure-glow" aria-hidden="true"></span>
+        <img class="intro-photo" src="Picture\picture.png" alt="Muhammad Haroon">
+        <p class="role">COMPUTER SCIENCE · PYTHON · C++ · WEB</p>
+      </div>
+      <p class="hook">Some people write code. <em>I build the things people come back to.</em></p>
+      <button class="play" id="playBtn" type="button">&#9654;&nbsp; Play</button>
+    </div>
+
+    <div class="loader" aria-hidden="true"><i></i></div>
+  </div>
+
+  <!-- ============ WHO'S WATCHING ============ -->
+  <div class="who" id="who" hidden>
+    <h1>Who's watching?</h1>
+    <div class="profiles">
+      <button class="profile" type="button" data-order="hero explore moments skills originals about" aria-label="Muhammad Haroon, full series">
+        <div class="avatar" style="background:linear-gradient(145deg,#e0262f,#7a0f17)">M<span class="main-badge">MAIN</span></div>
+        <b>Muhammad Haroon</b><small>The full series, in order</small>
+      </button>
+      <button class="profile" type="button" data-order="hero moments skills about originals explore" aria-label="Recruiter">
+        <div class="avatar" style="background:linear-gradient(145deg,#2f8fb3,#16465c)">R</div>
+        <b>Recruiter</b><small>Background, highlights and skills first</small>
+      </button>
+      <button class="profile" type="button" data-order="hero originals skills explore moments about" aria-label="Developer">
+        <div class="avatar" style="background:linear-gradient(145deg,#3aa76d,#175236)">&lt;/&gt;</div>
+        <b>Developer</b><small>Projects, stack and GitHub first</small>
+      </button>
+      <button class="profile" type="button" data-order="about hero originals moments explore skills" aria-label="Explorer">
+        <div class="avatar" style="background:linear-gradient(145deg,#e0a030,#6b4410)">&#10022;</div>
+        <b>Explorer</b><small>The story behind the work</small>
+      </button>
+    </div>
+    <p class="who-note">Every profile watches the same story. It only changes what plays first.</p>
+  </div>
+
+  <!-- ============ PAGE 2: SITE ============ -->
+  <div id="site" hidden>
+    <header class="nav">
+      <a class="brand" href="#top">HAROON<small>PORTFOLIO</small></a>
+      <nav class="nav-links" id="navLinks" aria-label="Sections"></nav>
+      <div class="nav-right">
+        <div class="theme" role="group" aria-label="Colour mode">
+          <button class="theme-btn" type="button" data-set="dark">Dark</button>
+          <button class="theme-btn" type="button" data-set="light">Light</button>
+        </div>
+        <button class="switch" id="switchBtn" type="button">Switch profile</button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero: first page of the site, sized to fit one screen -->
+      <section id="hero" class="hero" style="order:0">
+        <div class="hero-text">
+          <div class="series-tag"><span class="s-badge">S</span><span>SERIES</span></div>
+          <h1 class="hero-name">MUHAMMAD<br>HAROON</h1>
+          <p class="hero-sub">THE SERIES</p>
+          <div class="chips">
+            <span>Computer Science</span>
+            <span>5 Originals</span>
+            <span>13 Repositories</span>
+          </div>
+          <p class="hero-role">COMPUTER SCIENCE · PYTHON · C++ · WEB</p>
+          <p class="hero-desc">A computer science student building console apps, GUI tools and web projects in Python, C++ and JavaScript. Currently learning AI and backend systems.</p>
+          <div class="hero-actions">
+            <button class="btn-solid" id="heroPlay" type="button">&#9654;&nbsp; Play Intro</button>
+            <a class="btn-ghost" href="assets/resume.pdf" download>&#8681;&nbsp; View Resume</a>
+            <a class="btn-ghost" href="#end">Get in touch</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="hero-glow" aria-hidden="true"></div>
+          <img src="Picture\picture.png" alt="Portrait of Muhammad Haroon">
+        </div>
+      </section>
+
+      <!-- Continue exploring -->
+      <section id="explore" style="order:1">
+        <div class="head">
+          <div>
+            <div class="eyebrow">Continue exploring</div>
+            <h2>Pick up where you left off</h2>
+            <p class="sub">Four episodes. Start anywhere.</p>
+          </div>
+          <div class="arrows">
+            <button class="arrow" type="button" data-target="exTrack" data-dir="-1" aria-label="Scroll left">&#8592;</button>
+            <button class="arrow" type="button" data-target="exTrack" data-dir="1" aria-label="Scroll right">&#8594;</button>
+          </div>
+        </div>
+        <div class="track" id="exTrack">
+          <a class="episode slide" href="#originals" style="background:linear-gradient(145deg,#8c1620,#2a0a0e)">
+            <span class="play-ic">&#9654;</span><small>EPISODE 01</small><b>MY PROJECTS</b><span>Things I have built</span><i class="bar" style="width:80%"></i>
+          </a>
+          <a class="episode slide" href="#about" style="background:linear-gradient(145deg,#5b2a9e,#1b0d33)">
+            <span class="play-ic">&#9654;</span><small>EPISODE 02</small><b>ABOUT ME</b><span>The pilot</span><i class="bar" style="width:55%"></i>
+          </a>
+          <a class="episode slide" href="#skills" style="background:linear-gradient(145deg,#1f7a4a,#0a2a19)">
+            <span class="play-ic">&#9654;</span><small>EPISODE 03</small><b>MY SKILLS</b><span>The toolbox</span><i class="bar" style="width:65%"></i>
+          </a>
+          <a class="episode slide" href="#moments" style="background:linear-gradient(145deg,#1f5f8c,#0a2233)">
+            <span class="play-ic">&#9654;</span><small>EPISODE 04</small><b>HIGHLIGHTS</b><span>Study and progress</span><i class="bar" style="width:20%"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- Highlights -->
+      <section id="moments" style="order:2">
+        <div class="head">
+          <div>
+            <div class="eyebrow">Highlights</div>
+            <h2>At a glance</h2>
+          </div>
+          <div class="arrows">
+            <button class="arrow" type="button" data-target="moTrack" data-dir="-1" aria-label="Scroll left">&#8592;</button>
+            <button class="arrow" type="button" data-target="moTrack" data-dir="1" aria-label="Scroll right">&#8594;</button>
+          </div>
+        </div>
+        <div class="track" id="moTrack">
+          <article class="moment slide"><small>Education</small><h3>CS STUDENT</h3><em>University of Azad Jammu and Kashmir</em><p>Studying Computer Science, with a focus on programming and software development.</p></article>
+          <article class="moment slide"><small>Public work</small><h3>13 REPOSITORIES</h3><em>github.com/mharoon1434</em><p>Console apps, GUI tools and systems projects, all open on GitHub.</p></article>
+          <article class="moment slide"><small>Languages</small><h3>PYTHON + C++</h3><em>OOP and file handling</em><p>Used across banking, calculator, hospital and learning-system projects.</p></article>
+          <article class="moment slide"><small>Currently</small><h3>AI + BACKEND</h3><em>Learning</em><p>Working through Python for AI and advanced backend systems.</p></article>
+        </div>
+      </section>
+
+      <!-- Technical skills -->
+      <section id="skills" style="order:3">
+        <div class="head">
+          <div>
+            <div class="eyebrow">Technical skills</div>
+            <h2>My skill universe</h2>
+            <p class="sub">Languages, frameworks and tools, grouped by area. Select a group to review it.</p>
+          </div>
+        </div>
+        <div class="genres" role="tablist" aria-label="Skill groups">
+          <button class="genre" type="button" role="tab" data-g="g-lang" aria-selected="true">Languages</button>
+          <button class="genre" type="button" role="tab" data-g="g-front" aria-selected="false">Frontend</button>
+          <button class="genre" type="button" role="tab" data-g="g-back" aria-selected="false">Backend</button>
+          <button class="genre" type="button" role="tab" data-g="g-tools" aria-selected="false">Tools</button>
+        </div>
+        <div class="skill-grid gpanel" id="g-lang">
+          <div class="skill slide"><span class="ic">Py</span><b>Python</b><small>OOP, file handling, GUI apps</small><span class="used">Used in: Bank System, Calculator, Food Ordering</span></div>
+          <div class="skill slide"><span class="ic">C+</span><b>C++</b><small>OOP and console systems</small><span class="used">Used in: Hospital Management, Smart LMS</span></div>
+          <div class="skill slide"><span class="ic">JS</span><b>JavaScript</b><small>Web logic and the MERN stack</small></div>
+        </div>
+        <div class="skill-grid gpanel" id="g-front" hidden>
+          <div class="skill slide"><span class="ic">&lt;/&gt;</span><b>HTML5</b><small>Semantic page structure</small></div>
+          <div class="skill slide"><span class="ic">CS</span><b>CSS3</b><small>Responsive layout and motion</small></div>
+          <div class="skill slide"><span class="ic">Bs</span><b>Bootstrap</b><small>Responsive layouts</small></div>
+          <div class="skill slide"><span class="ic">Re</span><b>React</b><small>Component-based interfaces</small></div>
+        </div>
+        <div class="skill-grid gpanel" id="g-back" hidden>
+          <div class="skill slide"><span class="ic">No</span><b>Node.js</b><small>APIs for the MERN stack</small></div>
+          <div class="skill slide"><span class="ic">My</span><b>MySQL</b><small>Relational databases</small></div>
+          <div class="skill slide"><span class="ic">FS</span><b>File storage</b><small>Saving data in Python and C++</small></div>
+        </div>
+        <div class="skill-grid gpanel" id="g-tools" hidden>
+          <div class="skill slide"><span class="ic">Git</span><b>Git and GitHub</b><small>Version control and open source</small></div>
+          <div class="skill slide"><span class="ic">VS</span><b>VS Code</b><small>Primary development environment</small></div>
+          <div class="skill slide"><span class="ic">TK</span><b>Tkinter</b><small>Python desktop interfaces</small></div>
+        </div>
+      </section>
+
+      <!-- Projects: vertical scroll slides the cards sideways -->
+      <section id="originals" style="order:4">
+        <div class="pin" id="pin">
+          <div class="pin-stick">
+            <div class="pin-head">
+              <div>
+                <div class="eyebrow red">Projects</div>
+                <h2>Originals</h2>
+                <p class="sub">Selected projects. Scroll or drag the cards sideways to see more.</p>
+              </div>
+            </div>
+            <div class="rail" id="rail">
+              <article class="project" style="background:linear-gradient(145deg,#b3161f,#2a0509)">
+                <span class="big">1</span><span class="stamp">PYTHON · OOP</span>
+                <h3>BANK ACCOUNT SYSTEM</h3>
+                <p>Command-line banking with authentication, deposit, withdrawal and balance inquiry.</p>
+                <div class="stack"><span>Python</span><span>OOP</span><span>CLI</span></div>
+                <div><a class="btn" href="https://github.com/mharoon1434/Bank-account-management-system-python" target="_blank" rel="noopener">View Project</a></div>
+              </article>
+              <article class="project" style="background:linear-gradient(145deg,#c9861a,#2f1c03)">
+                <span class="big">2</span><span class="stamp">PYTHON · GUI</span>
+                <h3>SCIENTIFIC CALCULATOR</h3>
+                <p>Tkinter calculator with arithmetic, trigonometric and logarithmic functions, evaluated in real time.</p>
+                <div class="stack"><span>Python</span><span>Tkinter</span><span>Math</span></div>
+                <div><a class="btn" href="https://github.com/mharoon1434/scientific-calculator-tkinter" target="_blank" rel="noopener">View Project</a></div>
+              </article>
+              <article class="project" style="background:linear-gradient(145deg,#2a62b8,#08162f)">
+                <span class="big">3</span><span class="stamp">PYTHON · OOP</span>
+                <h3>FOOD ORDERING SYSTEM</h3>
+                <p>Multi-role ordering with order management and data saved between sessions.</p>
+                <div class="stack"><span>Python</span><span>OOP</span><span>File I/O</span></div>
+                <div><a class="btn" href="https://github.com/mharoon1434/food-ordering-system-python" target="_blank" rel="noopener">View Project</a></div>
+              </article>
+              <article class="project" style="background:linear-gradient(145deg,#1f7a4a,#0a2a19)">
+                <span class="big">4</span><span class="stamp">C++ · CONSOLE</span>
+                <h3>HOSPITAL MANAGEMENT</h3>
+                <p>Manages patients, doctors, nurses, admissions, billing and admin tasks with file storage.</p>
+                <div class="stack"><span>C++</span><span>File handling</span><span>Billing</span></div>
+                <div><a class="btn" href="https://github.com/mharoon1434/Hospital-Management-System-CPP" target="_blank" rel="noopener">View Project</a></div>
+              </article>
+              <article class="project" style="background:linear-gradient(145deg,#5b2a9e,#1b0d33)">
+                <span class="big">5</span><span class="stamp">C++ · OOP</span>
+                <h3>SMART LMS</h3>
+                <p>Instructors create and manage courses. Students enrol, study and complete assignments.</p>
+                <div class="stack"><span>C++</span><span>OOP</span><span>File handling</span></div>
+                <div><a class="btn" href="https://github.com/mharoon1434/Smart-Learning-Management-System-LMS-CPP" target="_blank" rel="noopener">View Project</a></div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="after-pin">
+          <p class="eyebrow">Want the full catalogue?</p>
+          <p class="hook">Every build, with the code <em>and the lessons</em> behind it.</p>
+          <a class="btn light" href="https://github.com/mharoon1434" target="_blank" rel="noopener">Browse on GitHub</a>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" style="order:5">
+        <div class="about">
+          <img class="slide" src="Picture\picture.png" alt="Muhammad Haroon">
+          <div>
+            <div class="eyebrow slide">The pilot</div>
+            <h2 class="slide">About me</h2>
+            <blockquote class="slide">&ldquo;I like turning vague problems into software people actually use.&rdquo;</blockquote>
+            <div class="facts">
+              <div class="fact slide"><small>Based in</small><b>Azad Jammu and Kashmir, Pakistan</b></div>
+              <div class="fact slide"><small>Studying</small><b>Computer Science</b></div>
+              <div class="fact slide"><small>Currently</small><b>Learning AI and backend systems</b></div>
+              <div class="fact slide"><small>Open to</small><b>Internships and open-source work</b></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="end" class="end" style="order:99">
+        <div class="eyebrow red slide">Next season</div>
+        <h2 class="slide">TO BE CONTINUED...</h2>
+        <p class="sub slide">Season two is being written. Have an internship, a project or an open-source idea in mind? Send a message.</p>
+        <div class="mail slide"><span id="mail">m.haroon.4550@gmail.com</span><button class="copy" id="copyBtn" type="button">Copy</button></div>
+        <div class="contact-links slide">
+          <a class="btn" href="https://github.com/mharoon1434" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/muhammad-haroon10" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn light" href="#top">&#8635; Watch again</a>
+        </div>
+      </section>
+    </main>
+    <p class="foot">Muhammad Haroon · Built as a series, one episode per section.</p>
+  </div>
+
+  <div id="cur" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
